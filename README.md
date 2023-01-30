@@ -1,11 +1,11 @@
 # My-Navy
-Projet de bataille navale en C dans son terminale
+Projet de bataille navale en C dans son terminal
 ___
 Mode Multijoueurs (2 joueurs):
 
 ![Screenshot_20230130_130213](https://user-images.githubusercontent.com/96384786/215473180-965431ef-25c6-49c5-8366-98577755a472.png)
 ___
-Vous allez vous connectez sur deux terminaux du même PC et vous pourrez jouer avec quelqu'un.
+Vous allez vous connecter sur deux terminaux du même PC et vous pourrez jouer avec quelqu'un.
 
 ___
 Mode Solo:
@@ -15,7 +15,7 @@ Mode Solo:
 ___
 Vous allez ici jouer contre un bot.
 - La map du bot est générée aléatoirement
-- Le bot contient 3 niveaux de difficultés
+- Le bot contient 3 niveaux de difficulté
   - Facile
   - Moyen
   - Difficile
