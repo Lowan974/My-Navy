@@ -17,7 +17,7 @@ int shoot_rand(player *p, int direction, int max_loop, char *last_shoot)
         if (try_to_shoot(p, direction, last_shoot) == 0) {
             shoot_rand(p, 1, max_loop + 1, last_shoot);
         } else {
-            last_shoot[1] += 1;
+            last_shoot[0] += 1;
             return 1;
         }
         break;
@@ -25,7 +25,7 @@ int shoot_rand(player *p, int direction, int max_loop, char *last_shoot)
         if (try_to_shoot(p, direction, last_shoot) == 0) {
             shoot_rand(p, 2, max_loop + 1, last_shoot);
         } else {
-            last_shoot[0] += 1;
+            last_shoot[1] += 1;
             return 1;
         }
         break;
@@ -33,7 +33,7 @@ int shoot_rand(player *p, int direction, int max_loop, char *last_shoot)
         if (try_to_shoot(p, direction, last_shoot) == 0) {
             shoot_rand(p, 3, max_loop + 1, last_shoot);
         } else {
-            last_shoot[1] -= 1;
+            last_shoot[0] -= 1;
             return 1;
         }
         break;
@@ -41,7 +41,7 @@ int shoot_rand(player *p, int direction, int max_loop, char *last_shoot)
         if (try_to_shoot(p, direction, last_shoot) == 0) {
             shoot_rand(p, 0, max_loop + 1, last_shoot);
         } else {
-            last_shoot[0] -= 1;
+            last_shoot[1] -= 1;
             return 1;
         }
         break;
